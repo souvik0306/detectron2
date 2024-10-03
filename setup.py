@@ -1,13 +1,12 @@
 #!/usr/bin/env python
 # Copyright (c) Facebook, Inc. and its affiliates.
-
+import torch
 import glob
 import os
 import shutil
 from os import path
 from setuptools import find_packages, setup
 from typing import List
-import torch
 from torch.utils.cpp_extension import CUDA_HOME, CppExtension, CUDAExtension
 
 torch_ver = [int(x) for x in torch.__version__.split(".")[:2]]
