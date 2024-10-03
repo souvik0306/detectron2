@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 # Copyright (c) Facebook, Inc. and its affiliates.
+import os
+os.system("pip install torch")
 import torch
 import glob
-import os
 import shutil
 from os import path
 from setuptools import find_packages, setup
